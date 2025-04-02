@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Information - Health Stories</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Header will be loaded dynamically -->
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Additional Information</h1>
+            <div class="form-container">
+                <form id="additionalInfoForm" action="profile.html" onsubmit="return validateAdditionalInfoForm()">
+                    <div class="form-group">
+                        <label for="infoUsername">User Name:</label>
+                        <input type="text" id="infoUsername" name="infoUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="infoEmail">Email:</label>
+                        <input type="email" id="infoEmail" name="infoEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="infoAadhaar">Aadhaar:</label>
+                        <input type="text" id="infoAadhaar" name="infoAadhaar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="infoBloodGroup">Blood Group:</label>
+                        <select id="infoBloodGroup" name="infoBloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Birth Date:</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="0" max="120" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyName">Emergency Contact Name:</label>
+                        <input type="text" id="emergencyName" name="emergencyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact No.:</label>
+                        <input type="tel" id="emergencyContact" name="emergencyContact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyRelation">Emergency Contact Relation:</label>
+                        <input type="text" id="emergencyRelation" name="emergencyRelation" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Continue</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer will be loaded dynamically -->
+    </footer>
+
+    <!-- Common JS -->
+    <script src="js/common.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <!-- Page-specific JS -->
+    <script src="js/auth.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

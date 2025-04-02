@@ -1,0 +1,98 @@
+
+/* Form Styles */
+.form-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group select:focus + label {
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.form-divider::before,
+.form-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.form-divider:hover::before,
+.form-divider:hover::after {
+  border-color: var(--primary-color);
+}
+
+.form-divider span {
+  padding: 0 10px;
+  color: #777;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.form-divider:hover span {
+  color: var(--primary-color);
+}
+
+.alternate-action {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alternate-action p {
+  margin-bottom: 10px;
+}
